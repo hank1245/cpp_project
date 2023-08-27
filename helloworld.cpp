@@ -17,6 +17,7 @@ using text_t = std::string;
 int main() {
     using std::cin;
     using std::cout;
+    using std::getline;
     using std::string;
     //::는 scope resolution operator 객체 참조라고 생각하면 된다. namespace도
     //: 객체이기 때문에
@@ -130,6 +131,60 @@ int main() {
     // } else {
     //     std::cout << "The temp is bad";
     // }
+
+    // Temperature conversion
+    // char unit;
+    // double temp;
+    // cout << "******************Temperature conversion***************\n";
+    // cout << "F = Farenheit\n";
+    // cout << "C = celcius\n";
+    // cout << "What unit would you like to convert to:";
+    // cin >> unit;
+    // if (unit == 'F' || unit == 'f') {
+    //     cout << "Enter the celcius: ";
+    //     cin >> temp;
+    //     temp = (1.8 * temp) + 32.0;
+    //     cout << "temperature in Farenheit: " << temp << "°F\n";
+
+    // } else if (unit == 'C' || unit == 'c') {
+    //     cout << "Enter Farenheit:";
+    //     cin >> temp;
+    //     temp = (temp - 32) / 1.8;
+    //     cout << "temperature in celcius: " << temp << "°C\n";
+
+    // } else {
+    //     cout << "please enter F or C";
+    // }
+    // cout << "************************";
+
+    // string methods
+    //  string name;
+    //  cout << "Enter your name: ";
+    //  getline(cin, name);
+    //  if (name.empty()) {
+    //      cout << "Your name is empty";
+    //  } else {
+    //      name.clear();
+    //      name = "Bro";
+    //      name.append("@gmail.com");
+    //      cout << "Hello " << name;
+    //      name.insert, name.at()
+    //      name.insert은 2개의 인자를 받는다 몇번째에 어떤 문자를 넣을지
+    //      name.find(' ')
+    //      name.erase(0,3)
+
+    // }
+    // while(true) {}
+
+    // do while loop
+    // do 안에 있는것들을 먼저 시행하고 while의 조건이 true인지 체크
+    // int number;
+    // do {
+    //     cout << "Enter positive number: ";
+    //     cin >> number;
+    // } while (number < 0);
+
+    // for loop에서 i는 index의 약자를 뜻함
 
     return 0;
 }
