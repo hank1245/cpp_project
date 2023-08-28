@@ -253,5 +253,7 @@ int main() {
     // }
     // cout << "*************End Game*************";
 
+    // function = block of reusable code
+
     return 0;
 }
