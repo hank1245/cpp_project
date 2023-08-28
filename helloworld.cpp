@@ -1,4 +1,5 @@
 #include <cmath>
+#include <ctime>
 #include <iostream>
 // namespace가 다르면 이름이 같아도 충돌나지 않음
 // namespace first {
@@ -185,6 +186,72 @@ int main() {
     // } while (number < 0);
 
     // for loop에서 i는 index의 약자를 뜻함
+    // 구구단
+    // for (int i = 2; i < 10; i++) {
+    //     for (int j = 1; j < 10; j++) {
+    //         if (j == 3) {
+    //             continue;
+    //         }
+    //         cout << i << 'X' << j << "=" << i * j << '\n';
+    //     }
+    // }
+
+    // 랜덤
+    // srand는 난수표를선택하는 함수 난수표 선택은 time을 인자로 함
+    // rand는 0부터 32767사이의 숫자를 생성함
+    // c++에서는 Null이 0으로 정의된다
+    // srand(time(NULL));
+    // int num1 = (rand() % 6) + 1;
+    // int num2 = (rand() % 6) + 1;
+    // int num3 = (rand() % 6) + 1;
+
+    // cout << num1 << '\n';
+    // cout << num2 << '\n';
+    // cout << num3 << '\n';
+
+    // random event generator
+
+    // srand(time(0));
+    // int randNum = rand() % 5;
+    // switch (randNum) {
+    // case 1:
+    //     cout << "You win a sticker";
+    //     break;
+    // case 2:
+    //     cout << "t-shirt";
+    //     break;
+    // case 3:
+    //     cout << "free lunch";
+    //     break;
+    // case 4:
+    //     cout << "car";
+    //     break;
+    // case 5:
+    //     cout << "house";
+    //     break;
+    // }
+
+    // 숫자 맞추기 게임
+    // srand(time(0));
+    // int random = (rand() % 100);
+    // int guess;
+    // int tries = 0;
+    // cout << "*************Guessing Number Game*************\n";
+    // cout << "Guess the number 0 to 100! \n";
+    // while (guess != random) {
+    //     tries++;
+    //     cout << "Insert Number: ";
+    //     cin >> guess;
+    //     if (guess > random) {
+    //         cout << "Too High! \n";
+    //     } else if (guess < random) {
+    //         cout << "Too Low! \n";
+    //     } else {
+    //         cout << "Correct!\n";
+    //         cout << "tries: " << tries << '\n';
+    //     }
+    // }
+    // cout << "*************End Game*************";
 
     return 0;
 }
