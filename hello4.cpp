@@ -25,7 +25,8 @@ int main() {
     // 수 없다. 그러면 input을 저장하는 공간의 크기를 미리 알 수 없으므로 크기를
     // 크게 지정할 수 밖에 없는데 그런 경우 메모리 낭비가 많아지는 문제가
     // 발생하기에 dynamic memory를 사용해야한다. 추후에 사용할 예정.
-    string foods[5];
+    int dy = 10;
+    string foods[dy];
     int size = sizeof(foods) / sizeof(foods[0]);
     string temp;
     for (int i = 0; i < size; i++) {
