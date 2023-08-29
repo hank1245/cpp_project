@@ -47,18 +47,20 @@ int main() {
     // int size = sizeof(prices) / sizeof(double);
     // cout << getTotal(prices, size);
 
-    // int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    // int size = sizeof(numbers) / sizeof(numbers[0]);
-    // int index;
-    // int myNum;
-    // cout << "Enter number to find\n";
-    // cin >> myNum;
-    // index = searchArray(numbers, size, myNum);
-    // if (index != -1) {
-    //     cout << index << "th number";
-    // } else {
-    //     cout << "not found";
-    // }
+    // linear search
+    // sizeof를 쓸때 int로 나누지 않고 첫번째 요소로 해도 결과는 같다.
+    //  int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    //  int size = sizeof(numbers) / sizeof(numbers[0]);
+    //  int index;
+    //  int myNum;
+    //  cout << "Enter number to find\n";
+    //  cin >> myNum;
+    //  index = searchArray(numbers, size, myNum);
+    //  if (index != -1) {
+    //      cout << index << "th number";
+    //  } else {
+    //      cout << "not found";
+    //  }
 
     return 0;
 }
