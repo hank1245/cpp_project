@@ -6,7 +6,7 @@ class Animal {
     // 클래스 사이에 중복되는것이 있으면 부모 클래스로 뺌으로써 재사용성 향상
   public:
     // 모든 객체나 상속받는 클래스는 아래 attribute를 가질것이다
-    // private 메소드도 있나??
+    // private 메소드도 있다.
     bool alive = true;
     void eat() { std::cout << "Eating!"; }
 };
@@ -25,6 +25,6 @@ int main() {
     Dog dog;
     Cat cat;
     std::cout << dog.alive << "\n";
-    cat.meow();
+    cat.eat();
     return 0;
 }
