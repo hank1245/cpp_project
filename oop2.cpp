@@ -85,7 +85,14 @@ int main() {
     // employee의 public메소드가 상속되면서 developer의 private메소드로 간주되기
     // 때문
     hank.AskforPromotion();
-    hank.work();
+    // hank.work();
+    // hank는 developer타입이지만 내부적으로 Employee이기도 하기 때문에
+    // Employee포인터에 저장 가능
+    // 결국은 이런 형태로 사용하기 위해서 쓴다고 함
+    // Employee *e1 = &hank;
+    // Employee* e2 = &employee1
+    // e2->work() // working
+    // e1->work(); // coding!!!
     return 0;
 }
 
@@ -96,5 +103,6 @@ int main() {
 // 그래서 미루고 나중에 파생클래스에서 오버라이딩 되면 가상함수의 base는
 // 부를수가 없어지고 파생클래스에서의 함수로 재정의된다
 
-// 부모클래스의 레퍼런스를 이용해서 자식 클래스 인스턴스를 레퍼런스하는데에 가장
-// 많이 사용한다는데 그게 어디에 쓰이는지??
+// 부모클래스의 레퍼런스를 이용해서 자식 클래스 인스턴스를 레퍼런스하는데에 사용
+// = 업캐스팅
+// d.work() t.work()이렇게 각각의 인스턴스를 생성해서 호출을 할 수도 있다
