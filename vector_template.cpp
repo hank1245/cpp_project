@@ -25,3 +25,5 @@ int main() {
     std::cout << v2 << std::endl;
     std::cout << v3 << std::endl;
 }
+
+// char 타입의 값이 문자로 출력되는 것을 방지하기 위함입니다.
