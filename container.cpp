@@ -3,7 +3,7 @@
 #include <list>
 #include <vector>
 
-template <typename container> void Print(container c) {
+template <class container> void Print(container c) {
     for (auto iter = c.begin(); iter != c.end(); iter++)
         std::cout << *iter << ", ";
     std::cout << std::endl;
