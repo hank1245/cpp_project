@@ -1,6 +1,4 @@
-#include <algorithm>
 #include <iostream>
-#include <list>
 #include <numeric>
 #include <vector>
 
@@ -15,7 +13,7 @@ int main() {
     Print(v1.begin(), v1.end());
     Print(v1.begin(), v1.end() - 2);
 
-    int sum = std::accumulate(v1.begin(), v1.end(), 0);
+    int sum = std::accumulate(v1.begin(), v1.end(), 100);
     std::cout << sum << std::endl;
 
     sum = std::accumulate(v1.begin(), v1.end() - 2, 0);
